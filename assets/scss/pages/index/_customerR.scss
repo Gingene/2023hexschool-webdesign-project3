@@ -1,0 +1,63 @@
+.customerR {
+  padding: $section-padding 0;
+  &-title {
+    font-size: $title-fz;
+    font-weight: 700;
+    text-align: center;
+    color: $main-font-color;
+    margin-bottom: 1.5rem;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    &-card {
+      box-shadow: 0px 2px 6px #00000029;
+      border-radius: 4px;
+      &-content {
+        // position: relative;
+        padding: 1rem;
+        height: 205px;
+        display: flex;
+        flex-direction: column;
+      }
+      &-title {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+      span {
+        font-size: 14px;
+        color: #707070;
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .customerR {
+    padding: $section-padding-md 0;
+    &-title {
+      font-size: $title-fz-md;
+      margin-bottom: 3rem;
+    }
+    &-list {
+      &-card {
+        width: 336px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .customerR {
+    &-list {
+      flex-wrap: nowrap;
+      &-card {
+        width: calc(25% - 12px);
+      }
+    }
+  }
+}

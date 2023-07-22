@@ -1,0 +1,56 @@
+.classic {
+  padding: $section-padding 0;
+  &-title {
+    font-size: $title-fz;
+    font-weight: 700;
+    text-align: center;
+    color: $main-font-color;
+    margin-bottom: 1.5rem;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    &-card {
+      &-pic {
+        margin-bottom: 0.5rem;
+      }
+      &-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 3rem;
+        font-style: italic;
+        font-weight: 700;
+        text-align: center;
+        color: $main-bg-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .classic {
+    padding: $section-padding-md 0;
+    &-title {
+      font-size: $title-fz-md;
+      margin-bottom: 3rem;
+    }
+    &-list {
+      &-card {
+        width: 336px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .classic {
+    &-list {
+      flex-direction: row;
+      &-card {
+        width: 416px;
+      }
+    }
+  }
+}

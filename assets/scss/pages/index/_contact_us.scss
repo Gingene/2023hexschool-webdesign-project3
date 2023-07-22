@@ -1,0 +1,99 @@
+.contact_us {
+  background-color: #fbf2f2;
+  padding: $section-padding 0;
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: $main-font-color;
+    margin-bottom: 1.5rem;
+  }
+  &-content {
+    margin-bottom: 1.5rem;
+  }
+  &-form {
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    textarea {
+      height: 8.5rem;
+    }
+    &-input {
+      width: 100%;
+      padding: 6px 12px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    &-btn {
+      border: 0;
+      background-color: $main-bg-color;
+      color: #fff;
+      font-weight: 700;
+      padding: 1rem 0;
+      width: 100%;
+    }
+    &-privacy {
+      margin-bottom: 1.5rem;
+      input[type="checkbox"] {
+        display: none;
+      }
+      input[type="checkbox"] + label {
+        position: relative;
+        padding-left: 2rem; /* 設定checkbox距離label的距離 */
+      }
+      input[type="checkbox"] + label:before {
+        content: "";
+        font-family: Material Icons Outlined;
+        position: absolute;
+        left: 0;
+        top: 0; /* 設定checkbox的垂直位置 */
+        width: 24px; /* 設定checkbox的大小 */
+        height: 24px; /* 設定checkbox的大小 */
+        border: 2px solid #000; /* 設定checkbox的框線大小和顏色 */
+        border-radius: 4px; /* 設定checkbox的圓角 */
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      /* 自定義已勾選的checkbox的外觀 */
+      input[type="checkbox"]:checked + label:before {
+        content: "check";
+        display: inline-block;
+        color: #fff;
+        background-color: $main-font-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .contact_us {
+    padding: $section-padding-md 0;
+    .container {
+      width: 600px;
+    }
+    &-title {
+      font-size: $title-fz-md;
+      margin-bottom: 3rem;
+    }
+    &-form {
+      &-privacy {
+        margin-bottom: 3rem;
+      }
+      &-btn {
+        display: block;
+        width: 416px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .contact_us {
+    .container {
+      width: 660px;
+    }
+  }
+}

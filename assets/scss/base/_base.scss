@@ -1,0 +1,47 @@
+$main-font-color: #650300;
+$main-bg-color: #aa0601;
+$section-padding: 2.5rem;
+$section-padding-md: $section-padding * 2;
+
+$title-fz: 1.5rem;
+$title-fz-md: $title-fz * 2;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  // outline: 1px solid lightgreen;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-padding {
+  padding: 2.5rem 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 0.75rem;
+  margin: 0 auto;
+}
+
+// @media (min-width: 992px) {
+//   .container {
+//     max-width: 960px;
+//   }
+// }
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}

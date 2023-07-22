@@ -1,0 +1,58 @@
+.introduction {
+  background-color: #fbf2f2;
+  padding: $section-padding 0;
+  &-title {
+    text-align: center;
+    font-size: $title-fz;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    &-card {
+      &-pic {
+        display: block;
+        width: 84px;
+        margin: 0 auto 1.5rem auto;
+      }
+      &-title {
+        color: $main-font-color;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .introduction {
+    padding: $section-padding-md 0;
+    &-title {
+      font-size: $title-fz-md;
+    }
+    &-list {
+      gap: 0;
+      column-gap: 1.5rem;
+      &-card {
+        width: 336px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .introduction {
+    &-list {
+      flex-wrap: nowrap;
+      &-card {
+        width: 306px;
+      }
+    }
+  }
+}
