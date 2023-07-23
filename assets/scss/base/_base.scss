@@ -14,7 +14,7 @@ $title-fz-md: $title-fz * 2;
 }
 
 body {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
   // font-family: "Roboto", sans-serif;
   line-height: 1.5;
 }
@@ -24,8 +24,8 @@ img {
   height: auto;
 }
 
-.section-padding {
-  padding: 2.5rem 0;
+a:hover {
+  text-decoration: underline;
 }
 
 .container {
@@ -34,11 +34,28 @@ img {
   margin: 0 auto;
 }
 
+.d-block-sm,
+.d-block-lg {
+  display: none;
+}
+
 // @media (min-width: 992px) {
 //   .container {
 //     max-width: 960px;
 //   }
 // }
+
+@media (min-width: 576px) {
+  .d-block-sm {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .d-block-lg {
+    display: block;
+  }
+}
 
 @media (min-width: 1400px) {
   .container {

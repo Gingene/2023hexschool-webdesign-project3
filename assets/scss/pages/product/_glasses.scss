@@ -1,0 +1,69 @@
+.glasses {
+  &-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    &-card {
+      &-title {
+        display: flex;
+        font-size: 1.5rem;
+        &-price {
+          margin-left: auto;
+          color: $main-bg-color;
+          font-weight: 500;
+        }
+      }
+      &-color {
+        &-box {
+          display: inline-block;
+          vertical-align: middle;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 4px;
+        }
+        &-green {
+          background-color: #5f3e2d;
+          margin-right: 0.5rem;
+        }
+        &-red {
+          background-color: #b75929;
+        }
+      }
+    }
+  }
+  &-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .glasses {
+    &-sm {
+      display: block;
+    }
+    &-product {
+      row-gap: 2.5rem;
+      margin-bottom: 5rem;
+      &-card {
+        width: 336px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .glasses {
+    &-lg {
+      display: block;
+    }
+    &-product {
+      row-gap: 5rem;
+      &-card {
+        width: calc(25% - 18px);
+      }
+    }
+  }
+}

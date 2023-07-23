@@ -1,0 +1,49 @@
+.category {
+  .container {
+    padding: 0;
+  }
+  &-menu {
+    display: flex;
+    &-item {
+      flex: 1;
+      text-align: center;
+      //   padding-bottom: 0.5rem;
+      border: 1px solid #dcdcdc;
+      &-link {
+        display: block;
+        padding: 1rem 0.75rem 0.5rem 0.75rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: #000;
+        &.active {
+          border-bottom: 8px solid $main-bg-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .category {
+    &-menu {
+      &-item {
+        &-link {
+          padding: 1rem 3rem 0.5rem 3rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .category {
+    &-menu {
+      &-item {
+        &-link {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

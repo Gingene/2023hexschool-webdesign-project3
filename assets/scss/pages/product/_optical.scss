@@ -1,0 +1,72 @@
+.optical {
+  &-banner {
+    display: none;
+    &-pic {
+      width: 50%;
+      height: 136px;
+      background-size: cover;
+    }
+    &-pic1 {
+      background-image: url(../images/product-header-sm-1.png);
+    }
+    &-pic2 {
+      background-image: url(../images/product-header-sm-2.png);
+    }
+  }
+  &.active {
+    display: flex;
+  }
+  &-section {
+    display: none;
+    padding: 2.5rem 0;
+    &.active {
+      display: block;
+    }
+  }
+  &-content {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    &-title {
+      font-size: 2.25rem;
+      font-weight: 500;
+    }
+    &-description {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .optical {
+    &-banner {
+      &-pic {
+        width: 50%;
+        height: 296px;
+      }
+    }
+    &-section {
+      padding: 5rem 0;
+    }
+    &-content {
+      &-title {
+        font-size: 42px;
+      }
+      &-description {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .optical {
+    &-banner {
+      &-pic1 {
+        background-image: url(../images/product-header-1.png);
+      }
+      &-pic2 {
+        background-image: url(../images/product-header-2.png);
+      }
+    }
+  }
+}
