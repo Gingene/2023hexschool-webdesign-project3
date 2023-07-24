@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/2023hexschool-webdesign-project3/assets/product-27d534fd.js"></script>
-    <link rel="stylesheet" href="/2023hexschool-webdesign-project3/assets/product-fe780db5.css">
+    <title>store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/2023hexschool-webdesign-project3/assets/store-93b5d9da.js"></script>
+    <link rel="stylesheet" href="/2023hexschool-webdesign-project3/assets/store-f8fd26cb.css">
   </head>
   <body>
     <header class="header">
@@ -34,7 +44,61 @@
     </nav>
   </div>
 </header>
-    <h1>我是about</h1>
+
+    <main class="branch">
+      <section class="store-select container">
+  <h1 class="store-select-title">門市據點</h1>
+  <form class="store-select-form" name="taipei">
+    <h2>
+      <span>選擇分店</span>
+      <input
+        type="text"
+        list="branchlist"
+        class="store-select-form-select"
+        id="branchInput"
+      />
+      <datalist id="branchlist">
+        <option value="台北市中山旗艦店">台北市中山旗艦店</option>
+        <option value="台北市綠園店">台北市綠園店</option>
+        <option value="台中清水旗艦店">台中清水旗艦店</option>
+        <option value="高雄中正形象店">高雄中正形象店</option>
+        <option value="高雄夢時代店">高雄夢時代店</option>
+      </datalist>
+    </h2>
+  </form>
+</section>
+
+      <section class="branch-location container">
+        <div class="branch-card">
+          <img src="/2023hexschool-webdesign-project3/assets/store-1-e8e7cac3.png" alt="台北市中山旗艦店" />
+          <div class="branch-card-main">
+            <h1 class="branch-card-title">台北市中山旗艦店</h1>
+            <ul class="branch-card-content">
+              <li class="branch-card-tel">
+                <span>call</span>
+                電話：(02)000-1234
+              </li>
+              <li class="branch-card-time">
+                <span>schedule</span>
+                營業時間：10:00-21:00
+              </li>
+              <li class="branch-card-address">
+                <span>place</span>
+                地址：台北市中山區南京東路25巷2-1號
+              </li>
+            </ul>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.1937295666917!2d121.58451357511078!3d25.061422137187282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab7e5d54f56d%3A0xd9f669d66f4a026d!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A5Y2X5Lqs5p2x6Lev5YWt5q61IFNlY3Rpb24gNjI16Jmf!5e0!3m2!1szh-TW!2stw!4v1690206353081!5m2!1szh-TW!2stw"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="branch-map"
+        ></iframe>
+      </section>
+    </main>
     <footer class="footer">
   <div class="container">
     <div class="footer-nav">
