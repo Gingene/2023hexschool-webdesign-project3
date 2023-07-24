@@ -1,0 +1,145 @@
+.branch {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  &-select {
+    &-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-left: 1rem;
+      border-left: 8px solid #9f1213;
+      margin-bottom: 1.5rem;
+    }
+    &-form {
+      margin-bottom: 1.5rem;
+      h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &-select {
+        margin-left: 0.5rem;
+        padding: 6px 12px;
+        width: calc(82% - 12px);
+        font-size: 18px;
+        color: #495057;
+      }
+    }
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      font-size: 1.5rem;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid rgb(0, 0, 0, 0.125);
+    }
+    &-content {
+      padding: 1rem 1.5rem;
+      border: 1px solid rgb(0, 0, 0, 0.125);
+      font-size: 1.25rem;
+      li {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          padding-bottom: 0.5rem;
+        }
+      }
+      span {
+        font-family: "Material Icons Outlined";
+        padding-right: 10px;
+      }
+
+      &-address {
+        span {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  &-location {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  &-map {
+    width: 100%;
+    height: 208px;
+  }
+}
+
+@media (min-width: 576px) {
+  .branch {
+    .container {
+      padding: 0 2.25rem;
+    }
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &-select {
+      &-title {
+        font-size: 3rem;
+      }
+      &-form {
+        margin-bottom: 2rem;
+        h2 {
+          justify-content: initial;
+        }
+        span {
+          font-size: 1.5rem;
+        }
+        &-select {
+          margin-left: 1rem;
+          width: 304px;
+        }
+      }
+    }
+    &-card {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1.5rem;
+      img {
+        width: 337px;
+      }
+      &-main {
+        width: 337px;
+      }
+    }
+    &-location {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+    &-map {
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .branch {
+    .container {
+      padding: 0 0.75rem;
+    }
+    padding-top: 6rem;
+    &-select {
+      &-title {
+        font-size: 3rem;
+      }
+      &-form {
+        margin-bottom: 2.5rem;
+      }
+    }
+    &-card {
+      width: 526px;
+      flex-direction: column;
+      img {
+        width: auto;
+      }
+      &-main {
+        width: auto;
+      }
+    }
+    &-map {
+      width: 746px;
+    }
+  }
+}

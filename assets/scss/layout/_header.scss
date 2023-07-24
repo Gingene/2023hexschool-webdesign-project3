@@ -2,26 +2,26 @@
   background: #aa0601;
   color: white;
   .container {
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-direction: column;
   }
   &-logo {
     padding: 1rem;
     img {
       width: 80px;
+      max-width: initial;
     }
   }
   &-nav {
-    margin: 0 -12px;
     &-menu {
       display: flex;
       flex-wrap: wrap;
       &-item {
         border: 1px solid white;
         text-align: center;
-        padding: 12px 60px;
+        padding: 12px 50px;
         flex: 1;
         a {
           color: white;
@@ -44,9 +44,10 @@
       padding: 12px;
     }
     &-nav {
-      margin: 0;
       &-menu {
         gap: 4rem;
+        flex-wrap: nowrap;
+        align-items: center;
         &-item {
           border: none;
           padding: 25px 0;

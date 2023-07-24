@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="store">
+      <section class="store-select container">
+        <h1 class="store-select-title">門市據點</h1>
+        <form class="store-select-form" name="area">
+          <h2>
+            <span>選擇地區</span>
+            <input
+              type="text"
+              list="location"
+              class="store-select-form-select"
+              id="locationInput"
+            />
+            <datalist id="location" name="list">
+              <option value="台北市">台北市</option>
+              <option value="台中市">台中市</option>
+              <option value="高雄市">高雄市</option>
+              <option value="全台門市">全台門市</option>
+            </datalist>
+          </h2>
+        </form>
+      </section>
+
+      <section class="store-location container">
+        <ul class="store-list">
+          <li class="store-list-card" id="taipei0">
+            <a href="branch.html">
+              <img src="../assets/images/store-1.png" alt="台北市中山旗艦店" />
+              <h3 class="store-list-card-title">台北市中山旗艦店</h3>
+              <ul class="store-list-card-content">
+                <li class="store-list-card-tel">
+                  <span>call</span>
+                  電話：(02)000-1234
+                </li>
+                <li class="store-list-card-time">
+                  <span>schedule</span>
+                  營業時間：10:00-21:00
+                </li>
+                <li class="store-list-card-address">
+                  <span>place</span>
+                  地址：台北市中山區南京東路25巷2-1號
+                </li>
+              </ul>
+              <button>詳細資訊</button>
+            </a>
+          </li>
+          <li class="store-list-card" id="taipei1">
+            <a href="">
+              <img src="../assets/images/store-2.png" alt="台北市綠園店" />
+              <h3 class="store-list-card-title">台北市綠園店</h3>
+              <ul class="store-list-card-content">
+                <li class="store-list-card-tel">
+                  <span>call</span>
+                  電話：(02)000-2345
+                </li>
+                <li class="store-list-card-time">
+                  <span>schedule</span>
+                  營業時間：10:00-21:00
+                </li>
+                <li class="store-list-card-address">
+                  <span>place</span>
+                  地址：台北市中正區復興南路 132-1 號
+                </li>
+              </ul>
+              <button>詳細資訊</button>
+            </a>
+          </li>
+          <li class="store-list-card" id="taichung0">
+            <a href="">
+              <img src="../assets/images/store-3.png" alt="台中清水旗艦店" />
+              <h3 class="store-list-card-title">台中清水旗艦店</h3>
+              <ul class="store-list-card-content">
+                <li class="store-list-card-tel">
+                  <span>call</span>
+                  電話：(02)000-1234
+                </li>
+                <li class="store-list-card-time">
+                  <span>schedule</span>
+                  營業時間：10:00-21:00
+                </li>
+                <li class="store-list-card-address">
+                  <span>place</span>
+                  地址：台中市清水區經南一路 23 號 8 樓
+                </li>
+              </ul>
+              <button>詳細資訊</button>
+            </a>
+          </li>
+          <li class="store-list-card" id="Kaohsiung0">
+            <a href="">
+              <img src="../assets/images/store-4.png" alt="高雄中正形象店" />
+              <h3 class="store-list-card-title">高雄中正形象店</h3>
+              <ul class="store-list-card-content">
+                <li class="store-list-card-tel">
+                  <span>call</span>
+                  電話：(07)000-2345
+                </li>
+                <li class="store-list-card-time">
+                  <span>schedule</span>
+                  營業時間：10:00-21:00
+                </li>
+                <li class="store-list-card-address">
+                  <span>place</span>
+                  地址：高雄市苓雅區中正路 38 號 12 樓
+                </li>
+              </ul>
+              <button>詳細資訊</button>
+            </a>
+          </li>
+          <li class="store-list-card" id="Kaohsiung1">
+            <a href="">
+              <img src="../assets/images/store-5.png" alt="高雄夢時代店" />
+              <h3 class="store-list-card-title">高雄夢時代店</h3>
+              <ul class="store-list-card-content">
+                <li class="store-list-card-tel">
+                  <span>call</span>
+                  電話：(07)000-1234
+                </li>
+                <li class="store-list-card-time">
+                  <span>schedule</span>
+                  營業時間：10:00-21:00
+                </li>
+                <li class="store-list-card-address">
+                  <span>place</span>
+                  地址：高雄市前鎮區中華一路 63 號 6 樓
+                </li>
+              </ul>
+              <button>詳細資訊</button>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
