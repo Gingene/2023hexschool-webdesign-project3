@@ -1,9 +1,13 @@
 @import "./base/reset";
 @import "./base/base";
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/pagination";
 
-@import "./pages/index.scss";
-@import "./pages/product.scss";
-@import "./pages/store.scss";
+@import "./pages/index";
+@import "./pages/product";
+@import "./pages/store";
 @import "./pages/branch";
+@import "./pages/question";
+@import "./pages/blog";
+@import "./pages/blogEvent";

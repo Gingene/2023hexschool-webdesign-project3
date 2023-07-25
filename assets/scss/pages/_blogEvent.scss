@@ -1,0 +1,155 @@
+.event {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  &-link {
+    &-title {
+      margin-bottom: 0.5rem;
+      a {
+        color: #000;
+        &:last-child {
+          color: $main-bg-color;
+        }
+      }
+    }
+    &-titletag {
+      color: $main-bg-color;
+      margin-bottom: 0.5rem;
+      a {
+        color: $main-bg-color;
+        font-weight: 700;
+        margin-right: 1rem;
+      }
+    }
+  }
+  &-section {
+    display: flex;
+    gap: 1.5rem;
+  }
+  &-main {
+    &-title {
+      font-size: 1.5rem;
+    }
+    &-subtitle {
+      margin-bottom: 1rem;
+    }
+    &-article {
+      &-pic {
+        margin-bottom: 0.5rem;
+      }
+      &-content {
+        margin-bottom: 1rem;
+        color: #555555;
+      }
+      &-adcopy {
+        color: #555555;
+      }
+    }
+  }
+
+  &-tag {
+    display: none;
+  }
+  &-social {
+    display: none;
+  }
+  &-pagelink {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .event {
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+    &-link {
+      &-titletag {
+        font-size: 1.5rem;
+      }
+    }
+    &-main {
+      &-title {
+        font-size: 3rem;
+      }
+      &-subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      &-article {
+        &-pic {
+          margin-bottom: 1rem;
+        }
+        &-content {
+          margin-bottom: 1.5rem;
+        }
+        &-adcopy {
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+
+    &-tag {
+      display: block;
+      &-title {
+        display: flex;
+        align-items: center;
+        color: $main-bg-color;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      &-tags {
+        a {
+          color: $main-bg-color;
+          font-weight: 700;
+          margin-right: 1rem;
+        }
+      }
+    }
+    &-social {
+      display: block;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #707070;
+      &-link {
+        color: #000;
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+    &-pagelink {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        display: flex;
+        color: #000;
+        align-items: center;
+      }
+      &-arrow {
+        &-back {
+          margin-right: 0.5rem;
+        }
+        &-forward {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .event {
+    &-tag {
+      &-title {
+        font-size: 2rem;
+      }
+      &-tags {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

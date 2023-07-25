@@ -91,3 +91,12 @@ function storePage() {
     });
   });
 }
+
+getCurrentFileName() === "blogEvent.html"
+  ? blogNavHandler()
+  : console.log("not blogEvent");
+
+function blogNavHandler() {
+  const blogNav = document.querySelector(".blog-nav");
+  blogNav.style.display = "block";
+}

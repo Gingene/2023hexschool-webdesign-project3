@@ -28,6 +28,7 @@
   &-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
     a {
       color: #212529;
@@ -106,7 +107,7 @@
     }
     &-list {
       &-card {
-        width: 337px;
+        width: calc(50% - 12px);
         img {
           height: 224px;
         }
@@ -124,6 +125,7 @@
       }
     }
     &-list {
+      justify-content: initial;
       &-card {
         width: 416px;
       }
