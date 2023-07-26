@@ -98,5 +98,5 @@ getCurrentFileName() === "blogEvent.html"
 
 function blogNavHandler() {
   const blogNav = document.querySelector(".blog-nav");
-  blogNav.style.display = "block";
+  blogNav.classList.add("d-block");
 }

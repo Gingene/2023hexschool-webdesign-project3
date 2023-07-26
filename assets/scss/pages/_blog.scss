@@ -68,7 +68,7 @@
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .blog {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -148,6 +148,20 @@
           }
           &-lg {
             display: inline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog {
+    &-list {
+      &-card {
+        &-text {
+          &-more {
+            margin-top: 90px;
           }
         }
       }

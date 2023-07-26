@@ -39,12 +39,6 @@ a:hover {
   display: none;
 }
 
-// @media (min-width: 992px) {
-//   .container {
-//     max-width: 960px;
-//   }
-// }
-
 @media (min-width: 576px) {
   .d-block-sm {
     display: block;
@@ -63,6 +57,12 @@ a:hover {
   }
   .d-block-lg {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
 }
 
