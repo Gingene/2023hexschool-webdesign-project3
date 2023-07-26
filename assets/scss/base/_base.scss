@@ -13,61 +13,7 @@ $title-fz-md: $title-fz * 2;
   // outline: 1px solid lightgreen;
 }
 
-body {
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
-  // font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-}
-
 img {
   max-width: 100%;
   height: auto;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  width: 100%;
-  padding: 0 0.75rem;
-  margin: 0 auto;
-}
-
-.d-block-sm,
-.d-block-lg {
-  display: none;
-}
-
-@media (min-width: 576px) {
-  .d-block-sm {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-  .d-block-lg {
-    display: block;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
 }

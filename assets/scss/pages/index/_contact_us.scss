@@ -40,18 +40,18 @@
       }
       input[type="checkbox"] + label {
         position: relative;
-        padding-left: 2rem; /* 設定checkbox距離label的距離 */
+        padding-left: 2rem;
       }
       input[type="checkbox"] + label:before {
         content: "";
         font-family: Material Icons Outlined;
         position: absolute;
         left: 0;
-        top: 0; /* 設定checkbox的垂直位置 */
-        width: 24px; /* 設定checkbox的大小 */
-        height: 24px; /* 設定checkbox的大小 */
-        border: 2px solid #000; /* 設定checkbox的框線大小和顏色 */
-        border-radius: 4px; /* 設定checkbox的圓角 */
+        top: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 2px solid #000;
+        border-radius: 0.25rem;
         text-align: center;
         transition: all 0.3s ease;
       }
@@ -71,7 +71,7 @@
   .contact_us {
     padding: $section-padding-md 0;
     .container {
-      width: 600px;
+      max-width: 600px;
     }
     &-title {
       font-size: $title-fz-md;
@@ -83,7 +83,7 @@
       }
       &-btn {
         display: block;
-        width: 416px;
+        width: calc(75% - 16px);
         margin: 0 auto;
       }
     }
@@ -93,7 +93,7 @@
 @media (min-width: 992px) {
   .contact_us {
     .container {
-      width: 660px;
+      max-width: 660px;
     }
   }
 }

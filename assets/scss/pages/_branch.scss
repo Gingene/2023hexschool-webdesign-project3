@@ -67,11 +67,8 @@
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .branch {
-    .container {
-      padding: 0 2.25rem;
-    }
     padding-top: 5rem;
     padding-bottom: 5rem;
     &-select {
@@ -97,19 +94,18 @@
       justify-content: space-between;
       gap: 1.5rem;
       img {
-        width: 337px;
+        width: calc(50% - 12px);
       }
       &-main {
-        width: 337px;
+        width: calc(50% - 12px);
       }
     }
     &-location {
       display: flex;
-      flex-direction: row;
       gap: 1.5rem;
     }
     &-map {
-      height: auto;
+      height: 414px;
     }
   }
 }
@@ -129,17 +125,23 @@
       }
     }
     &-card {
-      width: 526px;
+      width: calc(41.66666667% - 14px);
+      height: 414px;
       flex-direction: column;
+      gap: 0;
       img {
         width: auto;
+        height: 224px;
       }
       &-main {
         width: auto;
       }
     }
+    &-location {
+      flex-direction: row;
+    }
     &-map {
-      width: 746px;
+      width: calc(58.33333333% - 10px);
     }
   }
 }

@@ -113,7 +113,7 @@
           margin-bottom: 0.25rem;
         }
         &-pic {
-          width: 336px;
+          width: calc(50% - 12px);
         }
         &-text {
           display: block;
@@ -131,9 +131,6 @@
     &-list {
       &-card {
         height: 400px;
-        &-pic {
-          width: calc(50% - 12px);
-        }
         &-subtitle {
           margin-bottom: 1rem;
         }

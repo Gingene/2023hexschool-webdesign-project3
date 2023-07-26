@@ -54,7 +54,6 @@
       &-card {
         width: 100%;
         &-pic {
-          width: 100%;
           height: 240px;
           background-size: cover;
         }
@@ -69,23 +68,13 @@
   }
 }
 
-@media (min-width: 768px) {
-  .co-branding {
-    &-list {
-      &-card {
-        width: 696px;
-      }
-    }
-  }
-}
-
 @media (min-width: 992px) {
   .co-branding {
     &-list {
       flex-direction: row;
       gap: 0;
       &-card {
-        width: 648px;
+        width: 50%;
         &-pic {
           height: 240px;
           background-size: cover;

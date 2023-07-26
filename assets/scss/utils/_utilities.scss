@@ -1,0 +1,58 @@
+@import "../utils/container";
+@import "../utils/pagination";
+.d-block {
+  display: block;
+}
+
+.d-block-sm,
+.d-block-lg {
+  display: none;
+}
+
+.pt-s-m-l {
+  padding-top: 2.5rem;
+}
+
+.pb-s-m {
+  padding-bottom: 4rem;
+}
+
+.gap-m {
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .d-block-lg {
+    display: block;
+  }
+  .pt-s-m {
+    padding-top: 5rem;
+  }
+  .pt-s-m-l {
+    padding-top: 5rem;
+  }
+  .pb-s-m {
+    padding-bottom: 5rem;
+  }
+  .gap-m {
+    gap: 3rem;
+  }
+  .card4-m-g {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (min-width: 992px) {
+  .d-block-lg {
+    display: block;
+  }
+  .pt-s-m-l {
+    padding-top: 6rem;
+  }
+  .card3-g {
+    width: calc(33.33333333% - 16px);
+  }
+  .card4-m-g {
+    width: calc(25% - 18px);
+  }
+}

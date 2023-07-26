@@ -1,8 +1,11 @@
 @import "./base/reset";
 @import "./base/base";
+@import "./base/font";
+
+@import "./utils/utilities";
+
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/pagination";
 
 @import "./pages/index";
 @import "./pages/product";
@@ -11,7 +14,3 @@
 @import "./pages/question";
 @import "./pages/blog";
 @import "./pages/blogEvent";
-
-.d-block {
-  display: block;
-}

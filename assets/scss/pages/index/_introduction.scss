@@ -12,7 +12,6 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    align-items: center;
     &-card {
       &-pic {
         display: block;
@@ -40,7 +39,7 @@
       gap: 0;
       column-gap: 1.5rem;
       &-card {
-        width: 336px;
+        width: calc(50% - 12px);
       }
     }
   }
@@ -49,9 +48,8 @@
 @media (min-width: 992px) {
   .introduction {
     &-list {
-      flex-wrap: nowrap;
       &-card {
-        width: 306px;
+        width: calc(25% - 18px);
       }
     }
   }

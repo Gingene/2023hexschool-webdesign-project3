@@ -1,0 +1,15 @@
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+.maintitle-m {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .maintitle-m {
+    font-size: 3rem;
+  }
+}
