@@ -23,18 +23,42 @@
   &-social {
     display: flex;
     gap: 0.5rem;
-    img {
-      width: 1.5rem;
-      height: 1.5rem;
+    &-item {
+      &-link {
+        &:hover img {
+          transform: scale(1.3);
+        }
+      }
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: transform 0.3s linear;
+      }
     }
   }
   &-tel {
     margin-top: -1.5rem;
     margin-bottom: 0.5rem;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: white;
+      color: $main-bg-color;
+      a {
+        color: $main-bg-color;
+      }
+    }
   }
   &-email {
     padding-bottom: 1.5rem;
     border-bottom: 1px solid white;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: white;
+      color: $main-bg-color;
+      a {
+        color: $main-bg-color;
+      }
+    }
   }
   &-copyright {
     margin-top: 1rem;
@@ -45,6 +69,10 @@
     a {
       display: block;
       margin-bottom: 0.5rem;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.5);
+      }
     }
   }
 }
@@ -68,7 +96,7 @@
         &-item {
           a {
             &:hover {
-              text-decoration: underline;
+              border-bottom: 3px solid #fff;
             }
           }
         }

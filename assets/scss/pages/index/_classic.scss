@@ -14,8 +14,13 @@
     justify-content: center;
     align-items: center;
     &-card {
+      overflow: hidden;
       &-pic {
         margin-bottom: 0.5rem;
+        transition: transform 0.5s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
       &-title {
         font-family: "Roboto", sans-serif;
@@ -49,7 +54,7 @@
     &-list {
       flex-direction: row;
       &-card {
-        width: calc(33.33333333% - 16px);
+        width: calc(33.3334% - 16px);
       }
     }
   }

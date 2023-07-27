@@ -7,7 +7,6 @@
     &-item {
       flex: 1;
       text-align: center;
-      //   padding-bottom: 0.5rem;
       border: 1px solid #dcdcdc;
       &-link {
         display: block;
@@ -17,6 +16,10 @@
         color: #000;
         &.active {
           border-bottom: 8px solid $main-bg-color;
+        }
+        &:hover {
+          background-color: $main-bg-color;
+          color: #fff;
         }
       }
     }

@@ -29,9 +29,17 @@
       border: 0;
       background-color: $main-bg-color;
       color: #fff;
+      font-size: 1rem;
       font-weight: 700;
       padding: 1rem 0;
       width: 100%;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #fff;
+        color: $main-bg-color;
+        font-size: 1.25rem;
+        margin-bottom: -6px;
+      }
     }
     &-privacy {
       margin-bottom: 1.5rem;
@@ -55,8 +63,6 @@
         text-align: center;
         transition: all 0.3s ease;
       }
-
-      /* 自定義已勾選的checkbox的外觀 */
       input[type="checkbox"]:checked + label:before {
         content: "check";
         display: inline-block;
